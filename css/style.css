@@ -233,22 +233,13 @@
   }
 }
 
+
+
 @media screen and (max-width: 1500px) {
   .table-services-holder .table-services .cell {
     font-size: 25px;
   }
 
-  .header-text p {
-    font-size: 25px;
-    line-height: 27px;
-  }
-
-  .header-text-holder {
-    padding-right: 10px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
   .header-text p {
     font-size: 23px;
     line-height: 25px;
@@ -313,6 +304,14 @@
     font-size: 35px;
   }
 
+  .slogan-holder .title-text {
+    margin-top: 60px;
+  }
+
+  .services-carousel-holder {
+    margin: 0 !important;
+  }
+
   .button-consult {
     font-size: 18px;
     height: 75px;
@@ -329,6 +328,7 @@
   .table-services {
     transition: 1s;
     position: relative;
+    margin-top: 0 !important;
   }
 
   .table-services-holder {
