@@ -22,3 +22,14 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$('.icon-telegram').on('click', function() {
+  $(this).siblings('input.telegram-copy').select();
+  document.execCommand("copy")
+  $(this).attr('title', 'Скопійовано').tooltip('_fixTitle').tooltip('show');
+})
+
+$('.icon-telegram').mouseleave(function() {
+  $(this).attr('title', 'Натисніть, щоб скопіювати').tooltip('_fixTitle');
+
+})
