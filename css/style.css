@@ -1,7 +1,18 @@
 .container-fluid {
-  overflow: hidden;
+  overflow-x: hidden;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #D82400;
+}
+a:hover {
+  color: #D82400;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -52,9 +63,13 @@
   font-family: "AkzidenzGroteskPro-Bold", sans-serif;
   font-size: 65px;
   color: #D82400;
-  margin-top: 100px;
 }
-
+.slogan-holder .title-text {
+  margin-top:100px;
+}
+.consult-holder .find-service-text {
+  margin-top:30px;
+}
 .table-services {
   display: flex;
   flex-direction: row;
@@ -95,10 +110,16 @@
   text-align: center;
   border-radius: 100px;
   cursor: pointer;
+  transition:.3s;
+}
+
+.button-consult:hover {
+  background-color: rgba(216, 36, 0, 0.6);
 }
 
 .clients-text {
   text-transform: uppercase;
+  margin-top:100px;
 }
 
 .client-logo-holder {
@@ -120,7 +141,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left:80px; */
   transition: 1s;
 }
 
@@ -296,9 +316,6 @@
     width: 100%;
   }
 
-  .find-service-text {
-    margin-top: 20px;
-  }
 
   .title-text {
     font-size: 35px;
